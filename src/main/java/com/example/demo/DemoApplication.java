@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -21,9 +20,7 @@ public class DemoApplication implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
 
-        AccountService accountService = context.getBean(AccountService.class);
-
-        AccountService accountService2 = context.getBean(AccountService.class);
-
+//        AccountService accountService = context.getBean(AccountService.class);
+//        AccountService accountService2 = context.getBean(AccountService.class);
     }
 }
