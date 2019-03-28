@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class SingletonBean {
 
-    private PrototypeBean prototypeBean;
+    private FirstPrototypeBean firstPrototypeBean;
 
     @Lookup
-    public PrototypeBean getPrototypeBean() {
-        return prototypeBean;
+    public FirstPrototypeBean getFirstPrototypeBean() {
+        return firstPrototypeBean;
     }
 }

@@ -6,17 +6,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class AccountServiceImpl implements AccountService {
-    private static final Logger LOGGER = LoggerFactory.getLogger(AccountServiceImpl.class.getSimpleName());
+public class SecondAccountServiceImpl implements AccountService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SecondAccountServiceImpl.class.getSimpleName());
 
     private AccountDao accountDao;
 
-    public AccountServiceImpl() {
+    public SecondAccountServiceImpl() {
         LOGGER.info("Create service bean");
     }
 
     @Autowired
-    public AccountServiceImpl(AccountDao accountDao) {
+    public SecondAccountServiceImpl(AccountDao accountDao) {
         LOGGER.info("Create service bean");
         this.accountDao = accountDao;
     }
